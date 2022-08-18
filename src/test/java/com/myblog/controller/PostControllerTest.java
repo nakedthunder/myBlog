@@ -15,11 +15,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @WebMvcTest //NullPointException 에러가 남 bean이 없어서 주입함
 class PostControllerTest {
-    //controller에 요청을 날림
     @Autowired
     private MockMvc mockMvc;
 
-    //cmd + shift + T 를 눌러서 테스트를 만듬 같은 루트안에 테스트를 만듬
     @Test
     @DisplayName("/posts 요청시 Hello World를 출력한다.")
     void test() throws Exception {
